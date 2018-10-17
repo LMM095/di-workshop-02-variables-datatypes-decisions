@@ -30,6 +30,8 @@ For each of the **bold** questions below:
 
 ## Task 1
 
+**COMMIT TEST**
+
 Open your browser’s JavaScript console - right click anywhere on the page, and
 choose ‘Inspect Element’. Then, click ‘Console’ in the bar at the top of the
 pane that comes up. This lets you run JavaScript snippets on the web page you’re
@@ -56,30 +58,30 @@ happens.
 
 | Line                | Expected Result | Actual Result | Were you right? Why? |
 | ------------------- | --------------- | ------------- | -------------------- |
-| `2 + 2`             |                 |               |                      |
-| `5 - 3`             |                 |               |                      |
-| `3 * 6`             |                 |               |                      |
-| `10 / 2`            |                 |               |                      |
-| `5 / 2`             |                 |               |                      |
-| `5.0 / 2`           |                 |               |                      |
-| `“hello” + “world”` |                 |               |                      |
-| `“Hello” - “world”` |                 |               |                      |
-| `3 + “3”`           |                 |               |                      |
-| `typeof “hello”`    |                 |               |                      |
-| `typeof 13`         |                 |               |                      |
-| `typeof true`       |                 |               |                      |
-| `typeof 3 + 5`      |                 |               |                      |
-| `typeof (3 + 5)`    |                 |               |                      |
-| `typeof (3 + “3”)`  |                 |               |                      |
-| `3 == 3`            |                 |               |                      |
-| `3 == 2`            |                 |               |                      |
-| `typeof (3 == 3)`   |                 |               |                      |
-| `3 != 3`            |                 |               |                      |
-| `3 != 2`            |                 |               |                      |
-| `3 == 1 + 2`        |                 |               |                      |
-| `3 == 2 + 2`        |                 |               |                      |
-| `3 < 2 + 2`         |                 |               |                      |
-| `3 > 2 + 2`         |                 |               |                      |
+| `2 + 2`             |       4         |       4       |         Y            |
+| `5 - 3`             |       2         |       2       |         Y            |
+| `3 * 6`             |       18        |               |                      |
+| `10 / 2`            |        5        |               |                      |
+| `5 / 2`             |       2.5       |               |                      |
+| `5.0 / 2`           |       2.5       |               |                      |
+| `“hello” + “world”` |    helloworld   |               |                      |
+| `“Hello” - “world”` |      Hello      |     NaN       |          N           |
+| `3 + “3”`           |        33       |     33        |          Y           |
+| `typeof “hello”`    |        ?        |    string     |                      |
+| `typeof 13`         |        ?        |    number     |                      |
+| `typeof true`       |   variable      |    boolean    |          N           |
+| `typeof 3 + 5`      |    number       |    number5    |          N           |
+| `typeof (3 + 5)`    |     number      |    number     |          Y           |
+| `typeof (3 + “3”)`  |       ?         |     string    |                      |
+| `3 == 3`            |        ?        |     true      |                      |
+| `3 == 2`            |      false      |    false      |                      |
+| `typeof (3 == 3)`   |     number      |   boolean     |                      |
+| `3 != 3`            |       false     |     false     |                      |
+| `3 != 2`            |      true       |      true     |                      |
+| `3 == 1 + 2`        |      true       |     true      |                      |
+| `3 == 2 + 2`        |       false     |     false     |                      |
+| `3 < 2 + 2`         |       true      |     true      |                      |
+| `3 > 2 + 2`         |      false      |    false      |                      |
 
 ## Task 2
 
@@ -120,6 +122,7 @@ rect(position, 0, 10, 10)
 Run the sketch, and make notes below each of these questions:
 
 1. What happens?
+The program generates a rectangle that shifts position by 1 pixel. It starts at the position 100 on the canvas. 
 2. Why?
 3. What happens if you change 1 to a larger or smaller number?
 4. Why?
@@ -133,6 +136,7 @@ console.log('The position is ' + position)
 
 Open up the browser console again (right click -> inspect element -> console)
 and see what happens. **Why?**
+The position of the rectangle continuously changes it's position by 
 
 Add this line at the top of your program. Add your name!
 
@@ -146,8 +150,7 @@ Add this line to `draw`:
 text('My name is' + name, 10, 30)
 ```
 
-**What happens and why? Why isn’t there a space between the word ‘name’ and your
-name? Can you add one?**
+**What happens and why? Why isn’t there a space between the word ‘name’ and your name? Can you add one?**
 
 Add this line to the top of your sketch:
 
