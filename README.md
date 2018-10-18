@@ -122,7 +122,7 @@ rect(position, 0, 10, 10)
 Run the sketch, and make notes below each of these questions:
 
 1. What happens?
-The program generates a rectangle that shifts position by 1 pixel. It starts at the position 100 on the canvas. 
+The program generates a rectangle that shifts position by 1 pixel. It starts at the position 0 on the canvas. 
 2. Why?
 3. What happens if you change 1 to a larger or smaller number?
 4. Why?
